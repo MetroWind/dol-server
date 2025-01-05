@@ -3,15 +3,15 @@
 == How does it work?
 
 This is an HTTP server that serves a web page that wraps an Degree of
-Lewdity page. It provides server-side saves. The wrapper web page has
-two addition buttons to load saves from the server, and push the saves
-to the server. When it saves to the server, it basically takes a
-snapshot of the current local storage of the game (indexedDB,
-localStorage, and sessionStorage) and stores that in the server;
-similarly when it loads saves from the server, the local storage of
-the game is overwritten. This does not alter DoL in anyway, so if you
-save the game normally, it is still local. The server does not know
-about it.
+Lewdity page in a frame. It provides server-side saves. The wrapper
+web page has two addition buttons to load saves from the server, and
+push the saves to the server. When it saves to the server, it
+basically takes a snapshot of the current local storage of the game
+(indexedDB, localStorage, and sessionStorage) and stores that in the
+server; similarly when it loads saves from the server, the local
+storage of the game is overwritten. This does not alter DoL in anyway,
+so if you save the game normally, it is still local. The server does
+not know about it.
 
 The server actually keeps all saves it receives. It never removes old
 saves (for now).
